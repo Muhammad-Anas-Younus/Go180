@@ -1,0 +1,203 @@
+.pricing_page{
+	height: auto;
+	width: 100vw;
+	background: #0d1e25;
+}
+
+.pricing_page .hero{
+	height: 100vh;
+	width: 100%;
+	dispplay: flex;
+	flex-direction: column;
+	background-image: url("https://go180.nl/app/uploads/2021/05/GO180-Groningen_20.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+.pricing_page .hero .overlay{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.pricing_page .hero .overlay:before{
+    content: '';
+    background: rgba(0, 0, 0, 0.44);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100;
+    z-index: 1;
+}
+
+
+.pricing_page .hero .overlay h1{
+    font-family: "Poppins", sans-serif;
+  	color: #e1e1e1;
+  	font-size: 4rem;
+	z-index: 2;
+}	
+
+.pricing_page .hero .overlay p{
+    font-family: "Poppins", sans-serif;
+  	color: #e1e1e1;
+  	font-size: 1.2rem;
+	z-index: 2;
+	margin-top: 1rem;
+	text-align: center;
+	width: 50%;
+	line-height: 2rem;
+}	
+
+.pricing_page .hero .overlay .svg{
+	position: absolute;
+	bottom: 4rem;
+	z-index: 1;
+}
+
+.pricing_page .hero .overlay .svg .arrow{
+	position: relative;
+	left: 5.2rem;
+	bottom: 1.5rem;
+}
+.pricing_page .hero .overlay .svg .circle{
+	position: relative;
+	left: 2.5rem;
+}
+
+.pricing_page .hero .overlay .svg .circle2{
+		position: relative;
+		right: 2.5rem;
+	    transform: rotate(180deg)
+}
+
+.pricing_page .prices_container{
+	height: 150vh;
+	width: 100%;
+}
+
+.pricing_page .prices_container .text{
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.pricing_page .prices_container .text h1{
+	font-size: 4rem;
+	color: #e1e1e1;
+	font-family: "Poppins", san-serif;
+}
+
+.pricing_page .prices_container .text p{
+		font-size: 1.2rem;
+		line-height: 2rem;
+		color: #e1e1e1;
+		text-align: center;
+		width: 50%;
+		font-family: "Poppins", san-serif;	
+}
+
+.pricing_page .prices_container .prices_prices_container{
+	height: 100vh;
+	width: 100%;
+	padding-right: 1rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.pricing_page .prices_container .prices_prices_container .prices_prices{
+	width: 20rem;
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	border: 1px solid #e1e1e1;
+}
+
+.pricing_page .prices_container .prices_prices_container .prices_prices h3{
+	color: #e1e1e1;
+	font-size: 2rem;
+	font-family: "Poppins", sans-serif;
+}
+.pricing_page .prices_container .prices_prices_container .prices_prices ul{
+	width: 100%;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.pricing_page .prices_container .prices_prices_container .prices_prices ul li{
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	font-family: "Poppins", sans-serif;
+	color: #e1e1e1;
+}
+
+.pricing_page .prices_container .prices_prices_container .prices_prices p{
+	font-size: 2rem;
+	font-family: "Poppins", sans-serif;
+	color: #e1e1e1;
+}
+
+.pricing_page .prices_container.personal_training .prices_prices_container .prices_prices{
+	width: 35rem;
+}
+
+.pricing_page .pageSix .img_container .overlay .svg{
+	top: 450vh;
+}
+
+@media (max-width: 767px){
+	.pricing_page .hero .overlay p{
+		width: 90%;
+	}
+	.pricing_page .prices_container{
+		height: 300vh;
+	}
+
+	.pricing_page .prices_container .text{
+		height: 60vh;
+	}
+	.pricing_page .prices_container .text p{
+		width: 90%;
+		margin-top: 1rem;
+	}
+	.pricing_page .prices_container .prices_prices_container{
+		flex-direction: column;
+		height: 240vh;
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.pricing_page .prices_container .prices_prices_container .prices_prices{
+		height: 55vh;
+	}
+	.pricing_page .prices_container.personal_training{
+		height: 200vh;
+	}
+
+	.pricing_page .prices_container.personal_training .text{
+		text-align: center;
+		height: 60vh;
+	}
+
+	.pricing_page .prices_container.personal_training .prices_prices_container{
+		height: 140vh;
+	}
+
+	.pricing_page .prices_container.personal_training .prices_prices_container .prices_prices{
+		width: 20rem;
+	}
+	.pricing_page .pageSix .img_container .overlay .svg{
+		top: 650vh;
+	}
+}
+

@@ -1,0 +1,175 @@
+*:focus{
+	outline: none;
+}
+
+.contact_page{
+	min-height: 180vh;
+	height: auto;
+	width: 100vw;
+	background: #0d1e25;
+	display: flex;
+}
+
+.contact_page .left{
+	flex: 5;
+	min-height: 150vh;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 3rem;
+}
+
+.contact_page .left .locations h1.active{
+	font-size: 4rem;
+	color: #e1e1e1;
+	font-family: "Poppins", sans-serif;
+}
+
+.contact_page .left .locations h1{
+	font-size: 4rem;
+	color: rgba(255, 255, 255, .3);
+	font-family: "Poppins", sans-serif;
+}
+
+.contact_page .left .locations h1:hover, 
+.contact_page .left .locations h1.active:hover{
+	cursor: pointer;
+}
+
+.contact_page .left .details .address{
+	font-size: 1.2rem;
+	color: #e1e1e1;
+	margin-top: 5rem;
+	width: 30%;
+	line-height: 2rem;
+	font-family: "Poppins", sans-serif;
+}
+
+.contact_page .left .details .email, 
+.contact_page .left .details .phone{
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	text-decoration: underline;
+	color: #e1e1e1;
+	font-family: "Poppins",sans-serif;
+}
+
+.contact_page .left .timings{
+	margin-top: 5rem;
+}
+
+.contact_page .left .timings li{
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	color: #e1e1e1;
+	font-family: "Poppins",sans-serif;
+
+}
+
+.contact_page .right{
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.contact_page .right input{
+	width: 90%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid gray;
+	font-size: 1.2rem;
+	font-family: "Poppins", sans-serif;
+	color: #e1e1e1;
+	margin-bottom: 1rem;
+	height: 5rem;
+}
+
+.contact_page .right .topic_and_location{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+	width: 90%;
+}
+
+.contact_page .right .topic_and_location .topic, 
+.contact_page .right .topic_and_location .location{
+	display: flex;
+	flex-direction: column;
+}
+
+.contact_page .right .topic_and_location .topic label, 
+.contact_page .right .topic_and_location .location label{
+	font-size: 1.4rem;
+	color: gray;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 1rem;
+}
+
+.contact_page .right .topic_and_location .topic select, 
+.contact_page .right .topic_and_location .location select{
+	width: 14rem;
+	height: 3rem;
+	background: transparent;
+	border: 1px solid gray;
+	color: gray;
+	padding: 1rem;
+	border-radius: 2rem;
+}
+
+.contact_page .right .message{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-top: 5rem;
+}
+
+.contact_page .right .message label{
+	font-size: 1.2rem;
+	color: gray;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 1rem;
+}
+
+.contact_page .right .message textarea{
+	background: transparent;
+	border: 1px solid gray;
+	color: #e1e1e1;
+	
+}
+
+.contact_page .right button{
+	width: 8rem;
+	height: 3rem;
+	margin-top: 3rem;
+	font-family: "Poppins", sans-serif;
+	border-radius:3rem;
+	border: none;
+}
+
+@media (max-width: 768px){
+	.contact_page{
+		flex-direction: column-reverse;
+	}
+
+	.contact_page .right{
+		padding-left: 2rem;
+		margin-top: 20vh;
+	}
+
+	.contact_page .right .topic_and_location .topic select, 
+	.contact_page .right .topic_and_location .location select{
+		width: 9rem;
+	}
+
+	.contact_page .left{
+		padding-left: 2rem;
+		
+	}
+
+	.contact_page .left .locations h1, 
+	.contact_page .left .locations h1.active{
+		font-size: 3rem;
+	}
+}

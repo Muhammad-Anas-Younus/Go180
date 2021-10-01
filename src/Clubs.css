@@ -1,0 +1,132 @@
+.clubs_page{
+	height: auto;
+	width: 100vw;
+	background: #0d1e25;
+}
+
+.clubs_page .text{
+	height: 70vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.clubs_page .text h1{
+	font-size: 4rem;
+	color: #e1e1e1;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 1rem;
+}
+
+.clubs_page .text p{
+	font-size: 1.2rem;
+	color: #e1e1e1;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	width: 90%;
+}
+
+.clubs_page .container{
+	height: 100vh;
+	display: flex;
+}
+
+.clubs_page .container .left{
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.clubs_page .container .left h2{
+	font-size: 3rem;
+	font-family: "Poppins", sans-serif;
+	color: #e1e1e1;
+	margin-bottom: 3rem;
+}
+
+.clubs_page .container .left p{
+	font-size: 1.2rem;
+	font-family: "Poppins", sans-serif;
+	color: #e1e1e1;
+	line-height: 2rem;
+}
+
+.clubs_page .container .right{
+	flex: 7;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.clubs_page .container .right img{
+	width: 80%;
+	height: 90%;
+	object-fit: cover;
+}
+
+.clubs_page .container.leeuwarden{
+	flex-direction: row-reverse;
+	margin-top: 20vh;
+}
+
+.clubs_page .container.leeuwarden .right{
+	justify-content: flex-start;
+	padding-left: 2rem;
+}
+
+.clubs_page .container.leeuwarden .left{
+	margin-right: 5rem;
+}
+
+.clubs_page .pageSix{
+	margin-top: 20vh;
+}
+
+.clubs_page .pageSix .img_container .overlay .svg{
+	top: 360vh;
+}
+
+@media (max-width:  767px){
+	.clubs_page .text p{
+		width: 90%;
+		text-align: center;
+	}
+
+	.clubs_page .container{
+		flex-direction: column-reverse;
+	}
+
+	.clubs_page .container .right, 
+	.clubs_page .container .left{
+		flex: 5;
+	}
+
+	.clubs_page .container .right img{
+		height: 70%;
+	}
+
+	.clubs_page .container.leeuwarden{
+		flex-direction: column-reverse;
+	}
+
+	.clubs_page .container.leeuwarden .right{
+		padding-left: 0;
+		padding-right: 0;
+		justify-content: center;
+	}
+
+	.clubs_page .container.leeuwarden .left{
+		padding-right: 1rem;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 320px){
+	.clubs_page .container{
+		height: 150vh;
+	}
+}

@@ -1,0 +1,506 @@
+.we180{
+	height: auto;
+	width: 100vw;
+}
+
+.we180 .hero{
+	height: 100vh;
+	width: 100%;
+	background: url("https://go180.nl/app/uploads/2021/02/Go180-Leeuwarden-78web.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.we180 .hero .overlay{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.we180 .hero .overlay:before{
+    content: '';
+    background: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100;
+    z-index: 1;
+}
+
+
+.we180 .hero .overlay h1{
+    font-family: "Poppins", sans-serif;
+  	color: #e1e1e1;
+  	font-size: 4rem;
+	z-index: 2;
+}	
+
+.we180 .hero .overlay p{
+    font-family: "Poppins", sans-serif;
+  	color: #e1e1e1;
+  	font-size: 1.3rem;
+	z-index: 2;
+	margin-top: 1rem;
+}	
+
+.we180 .hero .overlay .svg{
+	position: absolute;
+	bottom: 4rem;
+}
+
+.we180 .hero .overlay .svg .arrow{
+	position: relative;
+	left: 5.2rem;
+	bottom: 1.5rem;
+}
+.we180 .hero .overlay .svg .circle{
+	position: relative;
+	left: 2.5rem;
+}
+
+.we180 .hero .overlay .svg .circle2{
+		position: relative;
+		right: 2.5rem;
+	    transform: rotate(180deg)
+}
+
+.we180 .secPage{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background: #0d1e25;
+}
+
+.we180 .secPage .left{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 5;
+}
+
+.we180 .secPage .left .first{
+	width: 20rem;
+	height: 13rem;
+	object-fit: cover;
+	margin-right: 2rem;
+}
+
+.we180 .secPage .left .second{
+	width: 15rem;
+	height: 10rem;
+	object-fit: cover;
+	margin-top: 3rem;
+}
+
+.we180 .secPage .right{
+	flex: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.we180 .secPage .right p{
+	 color: #e1e1e1;
+	font-size: 1.4rem;
+	font-family: "Poppins", sans-serif;
+	line-height: 2rem;
+}
+
+.we180 .pageThree{
+	height: 100vh;
+	width: 100%;
+	background: #0d1e25;
+	display: flex;
+}
+
+.we180 .pageThree .left{
+	height: 100%;
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+	padding-left: 5rem;
+	padding-right: 2rem;
+	align-items: baseline;
+}
+
+.we180 .pageThree .left h1{
+	 color: #e1e1e1;
+	 font-size: 3rem;
+	 font-family: "Poppins", sans-serif;
+	 margin-bottom: 2rem;
+}
+
+.we180 .pageThree .left p{
+	 color: #e1e1e1;
+	 font-size: 1.2rem;
+	 line-height: 2rem;
+	 font-family: "Poppins", sans-serif;
+}
+
+.we180 .pageThree .right{
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+	height: 100%;
+	padding-right: 5rem;
+}
+
+.we180 .pageThree .right li{
+	display: flex;
+	margin-top: 3rem;
+	border-bottom: 1px solid #e1e1e1;
+	padding-bottom: 2rem;	
+}
+
+.we180 .pageThree .right li p{
+	margin-left: 3rem;
+	font-size: 1.4rem;
+	color: #e1e1e1;
+	font-family: "Poppins", sans-serif;
+}
+
+.pageFour{
+	height: 150vh;
+	width: 100%;
+	background: #0d1e25;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.pageFour h1{
+	font-size: 4rem;
+	font-family: "Poppins", sans-serif;
+	color: #e1e1e1;
+}
+
+.pageFour .fourButtons{
+	margin-top: 5rem;
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.pageFour .fourButtons .btn{
+	width: 1.2rem;
+	height: 1.2rem;
+	border-radius: 50%;
+	background: #e1e1e1;
+	display: flex;
+	align-items: center;
+}
+
+.pageFour .fourButtons .btn:hover{
+	cursor: pointer;
+}
+
+.pageFour .fourButtons .btn::after{
+	content: '';
+	position: absolute;
+	width: 80%;
+	background: #e1e1e1;
+	left: 50%;
+	transform: translate(-50%);
+	height: 1px;
+}
+
+.pageFour .content{
+	display: flex;
+	height: 100vh;
+	margin-top: 5rem;
+	width: 100%;
+}
+
+@keyframes slideLeft{
+	0%{
+		transform: translateX(-100vw);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+
+.pageFour .content .left{
+	flex: 5;
+	height: 100%;
+	padding-left: 1rem;
+}
+
+.pageFour .content .left img{
+	margin-top:1rem;
+	width: 70%;
+	height: 90%;
+	object-fit: cover;
+}
+
+.pageFour .content .right{
+	flex: 5;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-top: 5rem;
+	text-align: left;
+}
+
+.pageFour .content .right h2{
+	font-size: 3rem;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 2rem;
+	color: #e1e1e1;
+	overflow-y: hidden;
+}
+
+.pageFour .content .right p{
+	font-size: 1.2rem;
+	width: 90%;
+	line-height: 2rem;
+	font-family: "Poppins", sans-serif;	
+	color: #e1e1e1;
+	overflow-y: hidden;
+}
+
+.pageFive{
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	background-color: #0d1e25;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.pageFive h1{
+	font-size: 4rem;
+	color: #e1e1e1;
+	font-family: "Poppins", sans-serif;
+}
+
+
+.pageFive .coaches{
+	align-items: center;
+	height: 80%;
+	width: 100%;
+	display: flex;
+	overflow-x: scroll;
+	align-items: center;
+}
+
+.pageFive .coaches .item{
+	width: 20rem;
+	height: 95%;
+	flex-shrink: 0;
+	margin-right: 2rem;
+}
+.pageFive .coaches .item .img{
+	height: 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.pageFive .coaches .item .info{
+	padding-top: 2rem;
+	height: 30%;
+	text-align: left;
+}
+
+.pageFive .coaches .item .info h2{
+	font-size: 1.8rem;
+	font-family: "Poppins", sans-serif;
+	color: #e1e1e1;
+	margin-bottom: 1rem;
+}
+
+.pageFive .coaches .item .info p{
+	font-size: 1rem;
+	font-family: "Poppins", sans-serif;
+	color: #e1e1e1;
+}
+
+.pageSix{
+	height: 70vh;
+	width: 100%;
+}
+
+.pageSix:hover{
+	cursor: pointer;
+}
+
+
+.pageSix .img_container{
+	height: 100%;
+	width: 100%;
+	background-image: url("https://go180.nl/app/uploads/2021/02/next-project-1920x648.jpg");
+	background-size: 105% 105%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: all 1s ease;
+}
+
+.img_container:hover{
+	background-size: 120% 120%;	
+}
+
+.pageSix .img_container .overlay{
+	 width: 100%;
+  	height: 100%;
+  z-index: 1;
+  display: flex;	
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.pageSix .img_container .overlay:before{
+    content: '';
+    background: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    left: 0;
+    top: 500;
+    z-index: 1;
+}
+
+.pageSix .img_container  .overlay h3{
+    font-family: "Poppins", sans-serif;
+  	color: #e1e1e1;
+  	font-size: 1.3rem;
+	z-index: 2;
+}	
+
+.pageSix .img_container  .overlay h1{
+    font-family: "Poppins", sans-serif;
+  	color: #e1e1e1;
+  	font-size: 4rem;
+	z-index: 2;
+	margin-top: 1rem;
+}	
+
+.pageSix .img_container  .overlay .svg{
+	position: absolute;
+	top: 600vh;
+}
+
+.pageSix .img_container  .overlay .svg .arrow{
+	position: relative;
+	left: 5.2rem;
+	bottom: 1.5rem;
+}
+.pageSix .img_container  .overlay .svg .circle{
+	position: relative;
+	left: 2.5rem;
+}
+
+.pageSix .img_container  .overlay .svg .circle2{
+		position: relative;
+		right: 2.5rem;
+	    transform: rotate(180deg)
+}
+
+
+@media (max-width:  768px){
+	.we180 .secPage {
+		flex-direction: column-reverse;
+	}
+
+	.we180 .secPage .left,
+	.we180 .secPage .right{
+		height: 50%;
+	}
+
+	.we180 .secPage .right p{
+		font-size: 1.2rem;
+	}
+
+	.we180 .secPage .left .first{
+		width: 11rem;
+		height: 8rem;
+		margin-right: 1rem;
+	}
+
+	.we180 .secPage .left .second{
+		width: 8rem;
+		height: 5rem;
+	}
+	.we180 .pageThree{
+		flex-direction: column;
+		height: 180vh;
+	}
+
+	.we180 .pageThree .left, 
+	.we180 .pageThree .right{
+		padding-left: 2rem;
+		padding-right: 1rem;
+		justify-content: center;
+	}
+	.we180 .pageFour{
+		padding-top: 3rem;
+		height: 200vh;
+	}
+	.we180 .pageFour h1{
+		font-size: 2rem;
+	}
+	.we180 .pageFour .content .left img{
+		width: 90%;
+	}
+	.we180 .pageFour .content .right{
+		padding-left: 2rem;
+		margin-bottom: 1rem;
+		overflow-y: hidden;
+	}
+	.we180 .pageFour .content .right p{
+		font-size: 1.1rem;
+	}
+	.we180 .pageFour .content{
+		flex-direction: column-reverse;
+		height: 160vh;
+	}
+
+	.pageSix .img_container{
+		background-size: cover;
+	}
+
+	.pageSix .img_container  .overlay .svg{
+		position: absolute;
+		top: 730vh;
+	}
+
+}
+
+@media (max-width:  360px){
+	.we180 .secPage .right{
+		padding-top: 5rem;
+		overflow-y: hidden;
+	}
+
+	.we180 .secPage .right p{
+		font-size: 1rem;
+	}
+}
+
+@media (max-width:  375px){
+	.we180 .pageThree{
+		height: 240vh;
+	}
+	.we180 .pageFour{
+		height: 220vh;
+	}
+	.we180 .pageFour .content{
+		height: 180vh;
+	}
+		.pageSix .img_container  .overlay .svg{
+		position: absolute;
+		top: 810vh;
+	}
+}

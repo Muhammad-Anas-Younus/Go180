@@ -1,38 +1,850 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: "Gilroy";
+  src:  local("Gilroy"), url(./assets/Gilroy-FREE/Gilroy-Light.otf) format("opentype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.landingPage{
+  width:  100vw;
+  height: 500vh;  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.landingPage .hero{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.landingPage .hero .overlay{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.landingPage .hero .overlay:before{
+    content: '';
+    background: rgba(0, 0, 0, 0.44);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+.landingPage .hero .overlay video{
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.landingPage .hero .overlay .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  z-index: 2;
+}
+
+.landingPage .hero .overlay .text h1{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: .2rem;
+}
+
+.landingPage .hero .overlay .text p{
+  font-size: 1.3rem;
+  width: 50%;
+  /*text-align: center;*/
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: 2rem;
+}
+
+.landingPage .hero .overlay .text button{
+  width: 10rem;
+  height: 3rem;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all linear .3s;
+
+}
+
+.landingPage .hero .overlay .text button:hover {
+  box-shadow: inset 400px 0 0 0 white;
+  cursor: pointer;
+}
+
+
+.landingPage .hero .overlay .text button a{
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  flex: 8;
+}
+
+.landingPage .secondPage{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://go180.nl/app/uploads/2021/02/slide-2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.landingPage .secondPage .second_overlay{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.landingPage .secondPage .second_overlay .text{
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.landingPage .secondPage .second_overlay .text h1{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: .2rem;
+}
+
+.landingPage .secondPage .second_overlay .text p{
+  font-size: 1.3rem;
+  width: 50%;
+  /*text-align: center;*/
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: 2rem;
+}
+
+.landingPage .secondPage .second_overlay .text button{
+  width: 10rem;
+  height: 3rem;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all linear .3s;
+
+}
+
+.landingPage .secondPage .second_overlay .text button:hover {
+  box-shadow: inset 400px 0 0 0 white;
+  cursor: pointer;
+}
+
+
+.landingPage .secondPage .second_overlay .text button a{
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  flex: 8;
+}
+
+.landingPage .secondPage .second_overlay:before{
+    content: '';
+    background: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 100;
+    z-index: 1;
+}
+
+
+.landingPage .thirdPage{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://go180.nl/app/uploads/2021/02/slide-3.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+}
+
+.landingPage .thirdPage .third_overlay{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.landingPage .thirdPage .third_overlay .text{
+  position: absolute;
+  top: 200;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.landingPage .thirdPage .third_overlay .text h1{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: .2rem;
+}
+
+.landingPage .thirdPage .third_overlay .text p{
+  font-size: 1.3rem;
+  width: 50%;
+  /*text-align: center;*/
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: 2rem;
+}
+
+.landingPage .thirdPage .third_overlay .text button{
+  width: 10rem;
+  height: 3rem;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all linear .3s;
+
+}
+
+.landingPage .thirdPage .third_overlay .text button:hover {
+  box-shadow: inset 400px 0 0 0 white;
+  cursor: pointer;
+}
+
+
+.landingPage .thirdPage .third_overlay .text button a{
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  flex: 8;
+}
+
+.landingPage .thirdPage .third_overlay:before{
+    content: '';
+    background: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 200;
+    z-index: 1;
+}
+
+
+.landingPage .fourthPage{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://go180.nl/app/uploads/2021/02/slide-4.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.landingPage .fourthPage .fourth_overlay{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.landingPage .fourthPage .fourth_overlay .text{
+  position: absolute;
+  top: 300;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.landingPage .fourthPage .fourth_overlay .text h1{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: .2rem;
+}
+
+.landingPage .fourthPage .fourth_overlay .text p{
+  font-size: 1.3rem;
+  width: 50%;
+  /*text-align: center;*/
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: 2rem;
+}
+
+.landingPage .fourthPage .fourth_overlay .text button{
+  width: 10rem;
+  height: 3rem;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all linear .3s;
+
+}
+
+.landingPage .fourthPage .fourth_overlay .text button:hover {
+  box-shadow: inset 400px 0 0 0 white;
+  cursor: pointer;
+}
+
+
+.landingPage .fourthPage .fourth_overlay .text button a{
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  flex: 8;
+}
+
+.landingPage .fourthPage .fourth_overlay:before{
+    content: '';
+    background: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 300;
+    z-index: 1;
+}
+
+
+.landingPage .fifthPage{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://go180.nl/app/uploads/2021/02/slide-5.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.landingPage .fifthPage .fifth_overlay{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.landingPage .fifthPage .fifth_overlay .text{
+  position: absolute;
+  top: 400;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.landingPage .fifthPage .fifth_overlay .text h1{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: .2rem;
+}
+
+.landingPage .fifthPage .fifth_overlay .text p{
+  font-size: 1.3rem;
+  width: 50%;
+  /*text-align: center;*/
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: 2rem;
+}
+
+.landingPage .fifthPage .fifth_overlay .text button{
+  width: 12rem;
+  height: 3rem;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all linear .3s;
+
+}
+
+.landingPage .fifthPage .fifth_overlay .text button:hover {
+  box-shadow: inset 400px 0 0 0 white;
+  cursor: pointer;
+}
+
+
+.landingPage .fifthPage .fifth_overlay .text button a{
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  flex: 8;
+}
+
+.landingPage .fifthPage .fifth_overlay:before{
+    content: '';
+    background: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 400;
+    z-index: 1;
+}
+
+
+.landingPage .sixthPage{
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://go180.nl/app/uploads/2021/02/slide-6.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+}
+
+.landingPage .sixthPage .sixth_overlay{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.landingPage .sixthPage .sixth_overlay .text{
+  position: absolute;
+  top: 500;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.landingPage .sixthPage .sixth_overlay .text h1{
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: .2rem;
+}
+
+.landingPage .sixthPage .sixth_overlay .text p{
+  font-size: 1.3rem;
+  width: 50%;
+  /*text-align: center;*/
+  line-height: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #e1e1e1;
+  margin-bottom: 2rem;
+}
+
+.landingPage .sixthPage .sixth_overlay .text button{
+  width: 12rem;
+  height: 3rem;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all linear .3s;
+
+}
+
+.landingPage .sixthPage .sixth_overlay .text button:hover {
+  box-shadow: inset 400px 0 0 0 white;
+  cursor: pointer;
+}
+
+
+.landingPage .sixthPage .sixth_overlay .text button a{
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  flex: 8;
+}
+
+.landingPage .sixthPage .sixth_overlay:before{
+    content: '';
+    background: rgba(0, 0, 0, 0.22);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 500;
+    z-index: 1;
+}
+
+
+.header{
+  position: fixed;
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  z-index: 3;
+}
+
+.header .left{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+}
+
+.header .right{
+  flex: 9;
+  padding-left: 6rem;
+}
+
+.header .right ul{
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .right ul li{
+  margin-right: 3rem;
+}
+
+.header .right ul li a{
+  text-decoration: none;
+  color: #e1e1e1;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 450;
+  transition: .5s all ease;
+}
+
+.header .right ul li a:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header .right ul li button{
+   width: 8rem;
+  height: 2.5rem;
+  background: #e1e1e1;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all linear .3s; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header .right ul li button:hover{
+    box-shadow: inset 400px 0 0 0 white;
+    cursor: pointer;
+}
+
+.header .right ul li button a{
+  text-decoration: none;
+  color: black;
+}
+
+.header .right ul li button a:hover{
+  color: black;
+}
+
+
+.button {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  box-sizing: border-box;
+  height: 36px;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
+.button svg {
+  stroke: white;
+  transition: 0.2s;
+}
+.button svg g:first-child {
+  opacity: 1;
+  transition: opacity 0s 0.2s;
+}
+.button svg g:first-child line {
+  transition: transform 0.2s 0.2s;
+  transform: translateY(0px);
+}
+.button svg g:last-child {
+  opacity: 0;
+  transition: opacity 0s 0.2s;
+}
+.button svg g:last-child line {
+  transition: transform 0.2s;
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+.button.-menu-open svg {
+  stroke: white;
+}
+.button.-menu-open svg g:first-child {
+  opacity: 0;
+}
+.button.-menu-open svg g:first-child line {
+  transition: transform 0.2s;
+}
+.button.-menu-open svg g:first-child line:first-child {
+  transform: translateY(7px);
+}
+.button.-menu-open svg g:first-child line:last-child {
+  transform: translateY(-7px);
+}
+.button.-menu-open svg g:last-child {
+  opacity: 1;
+}
+.button.-menu-open svg g:last-child line {
+  transition: transform 0.2s 0.2s;
+}
+.button.-menu-open svg g:last-child line:first-child {
+  transform: rotate(45deg);
+}
+.button.-menu-open svg g:last-child line:last-child {
+  transform: rotate(-45deg);
+}
+
+.header .right .mobMenu{
+  display: none;
+}
+
+
+.footer{
+  height: 25vh;
+  width: 100vw;
+  background: #0d1e25;
+  display: flex;
+  align-items: center;
+}
+
+.footer .left{
+  flex: 3;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .middle{
+  display: flex;
+  align-items: center;
+  flex: 4;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .middle li{
+  margin-right: 2rem;
+}
+
+.footer .right{
+  flex: 3;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .right a{
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-right: 1rem;
+}
+
+@media (max-width:  768px){
+  .header .left img{
+    position: absolute;
+    left: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+  .landingPage .hero .overlay .text h1{
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
+  .landingPage .hero .overlay .text p{
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .landingPage .secondPage .second_overlay .text p{
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .landingPage .thirdPage .third_overlay .text p{
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .landingPage .fourthPage .fourth_overlay .text p{
+    width: 80%;
+    font-size: 1.2rem;
+  }
+    .landingPage .fifthPage .fifth_overlay .text p{
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .landingPage .sixthPage .sixth_overlay .text p{
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .header .right ul{
+    display: none;
+  }
+
+  .header .right .button{
+    display: block;
+    overflow-y: hidden;
+  }
+
+  .header .right .mobMenu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0d1e25;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+
+  .header .right .mobMenu.open{
+    display: flex;
+  }
+
+  .header .right .mobMenu ul{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .header .right .mobMenu ul li{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .header .right .mobMenu ul li a{
+    font-size: 1.5rem;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+  .footer .left{
+    display: none;
+  }
+
+}
+
+@media (width:  1024px) and (height:  1366px){
+  .header .right ul{
+    display: none;
+  }
+
+  .header .right .button{
+    display: block;
+    top: 4rem;
+    right: 3rem;
+    overflow-y: hidden;
+  }
+  .header .right .mobMenu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0d1e25;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+
+  .header .right .mobMenu.open{
+    display: flex;
+  }
+
+  .header .right .mobMenu ul{
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header .right .mobMenu ul li{
+    margin-bottom: 2rem;
+  }
+  .header .right .mobMenu ul li a{
+    font-size: 1.5rem;
+  }
+
 }

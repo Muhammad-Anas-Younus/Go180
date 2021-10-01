@@ -1,0 +1,129 @@
+*:focus{
+	outline: none;
+}
+
+.join_page{
+	min-height: 180vh;
+	height: auto;
+	width: 100vw;
+	background: #0d1e25;
+	display: flex;
+}
+
+.join_page .left {
+	flex: 5;
+	display: flex;
+	height: 50vh;
+	padding-left: 3rem;
+	align-items: center;
+}
+
+.join_page .left h1{
+	font-size: 3rem;
+	color: #e1e1e1;
+	font-family: "Poppins", sans-serif;
+}
+
+
+.join_page .right{
+	flex: 5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.join_page .right input{
+	width: 90%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid gray;
+	font-size: 1.2rem;
+	font-family: "Poppins", sans-serif;
+	color: #e1e1e1;
+	margin-bottom: 1rem;
+	height: 5rem;
+}
+
+.join_page .right .topic_and_location{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+	width: 90%;
+}
+
+.join_page .right .topic_and_location .topic, 
+.join_page .right .topic_and_location .location{
+	display: flex;
+	flex-direction: column;
+}
+
+.join_page .right .topic_and_location .topic label, 
+.join_page .right .topic_and_location .location label{
+	font-size: 1.4rem;
+	color: gray;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 1rem;
+}
+
+.join_page .right .topic_and_location .topic select, 
+.join_page .right .topic_and_location .location select{
+	width: 14rem;
+	height: 3rem;
+	background: transparent;
+	border: 1px solid gray;
+	color: gray;
+	padding: 1rem;
+	border-radius: 2rem;
+}
+
+.join_page .right .message{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin-top: 5rem;
+}
+
+.join_page .right .message label{
+	font-size: 1.2rem;
+	color: gray;
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 1rem;
+}
+
+.join_page .right .message textarea{
+	background: transparent;
+	border: 1px solid gray;
+	color: #e1e1e1;
+	
+}
+
+.join_page .right button{
+	width: 8rem;
+	height: 3rem;
+	margin-top: 3rem;
+	font-family: "Poppins", sans-serif;
+	border-radius:3rem;
+	border: none;
+}
+
+@media (max-width: 768px){
+	.join_page{
+		flex-direction: column;
+	}
+
+	
+	.join_page .right{
+		padding-left: 2rem;
+		margin-top: -30vh;
+	}
+
+	.join_page .right .topic_and_location .topic select, 
+	.join_page .right .topic_and_location .location select{
+		width: 9rem;
+	}
+
+	.join_page .left{
+		padding-left: 2rem;
+	}
+
+}

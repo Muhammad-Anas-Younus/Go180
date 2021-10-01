@@ -1,0 +1,111 @@
+.programs{
+	height: auto;
+	width: 100vw;
+	background: #0d1e25;
+}
+
+.programs .text{
+	height: 70vh;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.programs .text h1{
+	font-size: 4rem;
+	color: #e1e1e1;
+	font-family: "Poppins", sans-serif;
+}
+
+.programs .text p{
+	font-size: 1.2rem;
+	color: #e1e1e1;
+	font-family: "Poppins", sans-serif;
+	margin-top: 2rem;
+	text-align: center;
+	line-height: 1.8rem;
+}
+
+.programs .text_and_image{
+	height: 120vh;
+	display: flex;
+}
+
+.programs .text_and_image .text{
+	flex: 4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+
+.programs .text_and_image .text h1, 
+.programs .text_and_image .text p{
+	text-align: left;
+}
+
+.programs .text_and_image .img{
+	flex: 6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.programs .text_and_image .img img{
+	width: 80%;
+	height: 90vh;
+	object-fit: cover;
+}
+
+.programs .text_and_image.two{
+	flex-direction: row-reverse;
+}
+
+.programs .pageSix .img_container  .overlay .svg{
+	top: 720vh;
+}
+
+@media (max-width:  767px){
+	.programs .text{
+		height: 50vh;
+		justify-content: flex-end;
+	}
+
+	.programs .text_and_image{
+		flex-direction: column-reverse;
+	}
+
+	.programs .text_and_image .text{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	.programs .text_and_image .text h1{
+		font-size: 2.5rem;
+	}
+
+	.programs .text_and_image .text p{
+		font-size: 1rem;
+	}
+
+	.programs .text_and_image .img{
+		align-items: flex-end;
+	}
+
+	.programs .text_and_image .img img{
+		height: 20rem;
+		width: 20rem;
+	}
+	.programs .text_and_image.two{
+		flex-direction: column-reverse;
+	}
+	.programs .pageSix .img_container  .overlay .svg{
+		top: 700vh;
+	}
+
+}
